@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Privacy policy for SwimSet, a watch-first swim training app. SwimSet has no servers, no accounts and no analytics.">
+<meta name="color-scheme" content="light dark">
+<title>SwimSet Privacy</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root {
+    --ground: #f2f6f6;
+    --surface: #ffffff;
+    --ink: #10242b;
+    --ink-soft: #56707a;
+    --accent: #0d6774;
+    --rule: #d2dedf;
+    --mark-bg: #e7efef;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #0a1417;
+      --surface: #102026;
+      --ink: #dfeaea;
+      --ink-soft: #90a8af;
+      --accent: #56b6c2;
+      --rule: #23383f;
+      --mark-bg: #16292f;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #0a1417;
+    --surface: #102026;
+    --ink: #dfeaea;
+    --ink-soft: #90a8af;
+    --accent: #56b6c2;
+    --rule: #23383f;
+    --mark-bg: #16292f;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: "Source Sans 3", ui-sans-serif, system-ui, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    margin: 0;
+    padding-inline: 20px;
+    padding-block: 0;
+  }
+
+  .page {
+    max-width: 40rem;
+    margin-inline: auto;
+    padding-block: clamp(40px, 8vw, 88px);
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+  }
+
+  header { display: flex; flex-direction: column; gap: 14px; }
+
+  .eyebrow {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  h1 {
+    font-family: Fraunces, Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(2.1rem, 6vw, 2.9rem);
+    line-height: 1.1;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+    margin: 0;
+  }
+
+  .standfirst {
+    font-size: 1.12rem;
+    color: var(--ink-soft);
+    margin: 0;
+    max-width: 34rem;
+  }
+
+  .meta {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.78rem;
+    color: var(--ink-soft);
+    border-top: 1px solid var(--rule);
+    padding-top: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 28px;
+  }
+
+  section { display: flex; flex-direction: column; gap: 14px; }
+
+  h2 {
+    font-family: Fraunces, Georgia, serif;
+    font-weight: 600;
+    font-size: 1.38rem;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+    margin: 0;
+  }
+
+  p { margin: 0; }
+
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible, summary:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  .lede {
+    background: var(--surface);
+    border-left: 3px solid var(--accent);
+    padding: 22px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .lede p { font-size: 1.05rem; }
+
+  ul { margin: 0; padding-left: 1.15rem; display: flex; flex-direction: column; gap: 8px; }
+
+  .types {
+    list-style: none;
+    padding: 18px 20px;
+    margin: 0;
+    background: var(--mark-bg);
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.86rem;
+    line-height: 1.5;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 6px 24px;
+    overflow-x: auto;
+  }
+  .types li::before {
+    content: "·";
+    color: var(--accent);
+    padding-right: 8px;
+  }
+
+  footer {
+    border-top: 1px solid var(--rule);
+    padding-top: 20px;
+    color: var(--ink-soft);
+    font-size: 0.92rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="eyebrow">Privacy Policy</div>
+    <h1>SwimSet keeps your swimming on your own devices</h1>
+    <p class="standfirst">SwimSet plans a pool workout on iPhone, guides it on Apple Watch, and records it to Health. None of that leaves your devices.</p>
+    <div class="meta">
+      <span>Effective 14 September 2026</span>
+      <span>iOS and watchOS</span>
+    </div>
+  </header>
+
+  <div class="lede">
+    <p><strong>SwimSet collects nothing.</strong> The app has no servers, no accounts, no analytics and no third-party SDKs. It contains no networking code at all, so there is no channel through which your data could be sent anywhere — not to us, not to anyone else.</p>
+  </div>
+
+  <section>
+    <h2>Health data it reads</h2>
+    <p>With your permission, SwimSet reads the following from Apple Health to compare the swims you completed against the session it planned, and to suggest what to swim next:</p>
+    <ul class="types">
+      <li>Workouts</li>
+      <li>Swimming distance</li>
+      <li>Swimming stroke count</li>
+      <li>Heart rate</li>
+      <li>Resting heart rate</li>
+      <li>Heart rate variability (SDNN)</li>
+      <li>Active energy burned</li>
+      <li>Workout effort score</li>
+      <li>Estimated workout effort score</li>
+      <li>Sleep analysis</li>
+      <li>Water temperature</li>
+      <li>Underwater depth</li>
+    </ul>
+    <p>All of it is read on your device and used on your device. Apple Health governs this access: you grant it, you can see it, and you can revoke it at any time in the Health app, under Sharing → Apps. SwimSet works with whatever you allow, and says on screen when something it asked for was not available.</p>
+  </section>
+
+  <section>
+    <h2>Health data it writes</h2>
+    <p>The iPhone app never writes to Health. It asks only for read access.</p>
+    <p>When you swim a session, SwimSet on Apple Watch runs the workout and saves the completed workout to Health the way Apple's own Workout app does. That record is yours, in your Health database, and you can delete it there.</p>
+  </section>
+
+  <section>
+    <h2>What is stored on your device</h2>
+    <p>Your preferences and plans stay in the app's own storage on the device that made them: session length, focus, level, pool, the equipment you said you have, custom workouts you built, and the training profile the app derives from your completed swims. On Apple Watch, the current session is written to disk so the set list stays readable in the pool with no phone and no signal, and is shared with the SwimSet complication through a private app group.</p>
+    <p>Deleting SwimSet removes all of it. Health data is not part of the app's storage and remains in Health until you delete it there.</p>
+  </section>
+
+  <section>
+    <h2>Photos and text you import</h2>
+    <p>You can paste a written workout or pick a photo of a whiteboard, and SwimSet will read the sets from it. Recognition runs entirely on your device using Apple's Vision framework. The image is used to produce the text and is not copied into the app's storage, uploaded, or retained after the draft is created.</p>
+  </section>
+
+  <section>
+    <h2>No tracking, no advertising, no sale of data</h2>
+    <p>SwimSet does not track you across apps or websites, contains no advertising or attribution frameworks, and has nothing to sell or share, because it collects nothing in the first place.</p>
+  </section>
+
+  <section>
+    <h2>What SwimSet is not</h2>
+    <p>SwimSet describes what it measured. It is not a medical device and does not diagnose fatigue, injury, illness or readiness. Its training recommendations are a product implementation, not a clinically validated coaching algorithm.</p>
+  </section>
+
+  <section>
+    <h2>Children</h2>
+    <p>SwimSet is made for adult recreational swimmers and is not directed at children. It collects no personal information from anyone, including children.</p>
+  </section>
+
+  <section>
+    <h2>Changes</h2>
+    <p>If a future version of SwimSet handles data differently, this policy will be updated before that version ships, and the effective date above will change with it.</p>
+  </section>
+
+  <footer>
+    <p>Questions about this policy: <a href="mailto:gokturkgocen@gmail.com">gokturkgocen@gmail.com</a></p>
+    <p>SwimSet — Göktürk Göçen</p>
+  </footer>
+</div>
+</body>
+</html>
