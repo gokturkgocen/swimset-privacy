@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Support for SwimSet, a watch-first swim training app for iPhone, Apple Watch and Garmin.">
+<meta name="color-scheme" content="light dark">
+<title>SwimSet Support</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root {
+    --ground: #f2f6f6;
+    --surface: #ffffff;
+    --ink: #10242b;
+    --ink-soft: #56707a;
+    --accent: #0d6774;
+    --rule: #d2dedf;
+    --mark-bg: #e7efef;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #0a1417;
+      --surface: #102026;
+      --ink: #dfeaea;
+      --ink-soft: #90a8af;
+      --accent: #56b6c2;
+      --rule: #23383f;
+      --mark-bg: #16292f;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #0a1417;
+    --surface: #102026;
+    --ink: #dfeaea;
+    --ink-soft: #90a8af;
+    --accent: #56b6c2;
+    --rule: #23383f;
+    --mark-bg: #16292f;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: "Source Sans 3", ui-sans-serif, system-ui, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    margin: 0;
+    padding-inline: 20px;
+    padding-block: 0;
+  }
+
+  .page {
+    max-width: 40rem;
+    margin-inline: auto;
+    padding-block: clamp(40px, 8vw, 88px);
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+  }
+
+  header { display: flex; flex-direction: column; gap: 14px; }
+
+  .eyebrow {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  h1 {
+    font-family: Fraunces, Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(2.1rem, 6vw, 2.9rem);
+    line-height: 1.1;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+    margin: 0;
+  }
+
+  .standfirst {
+    font-size: 1.12rem;
+    color: var(--ink-soft);
+    margin: 0;
+    max-width: 34rem;
+  }
+
+  .meta {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.78rem;
+    color: var(--ink-soft);
+    border-top: 1px solid var(--rule);
+    padding-top: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 28px;
+  }
+
+  section { display: flex; flex-direction: column; gap: 14px; }
+
+  h2 {
+    font-family: Fraunces, Georgia, serif;
+    font-weight: 600;
+    font-size: 1.38rem;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+    margin: 0;
+  }
+
+  p { margin: 0; }
+
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible, summary:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  .lede {
+    background: var(--surface);
+    border-left: 3px solid var(--accent);
+    padding: 22px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .lede p { font-size: 1.05rem; }
+
+  ul { margin: 0; padding-left: 1.15rem; display: flex; flex-direction: column; gap: 8px; }
+
+  .types {
+    list-style: none;
+    padding: 18px 20px;
+    margin: 0;
+    background: var(--mark-bg);
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.86rem;
+    line-height: 1.5;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 6px 24px;
+    overflow-x: auto;
+  }
+  .types li::before {
+    content: "·";
+    color: var(--accent);
+    padding-right: 8px;
+  }
+
+  dt { font-weight: 600; }
+  dd { margin: 4px 0 0; color: var(--ink); }
+  dl { margin: 0; display: flex; flex-direction: column; gap: 18px; }
+
+  footer {
+    border-top: 1px solid var(--rule);
+    padding-top: 20px;
+    color: var(--ink-soft);
+    font-size: 0.92rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="eyebrow">Support</div>
+    <h1>Help with SwimSet</h1>
+    <p class="standfirst">SwimSet writes a pool session on iPhone and guides it on Apple Watch or a Garmin watch. If something is not working, this page covers the usual causes. For anything else, write to the address at the bottom.</p>
+    <div class="meta">
+      <span>iPhone: iOS 18 or later</span>
+      <span>Apple Watch: watchOS 11 or later</span>
+      <span>Garmin: Connect IQ 5.0 watches</span>
+    </div>
+  </header>
+
+  <section>
+    <h2>Apple Watch</h2>
+    <dl>
+      <div><dt>The session is not on my watch</dt>
+      <dd>Open SwimSet on the watch once, with the iPhone nearby and unlocked, then send again from Today. SwimSet shows on the iPhone whether the watch has the exact session you see, and says so when it is still waiting.</dd></div>
+      <div><dt>I also scheduled it in Apple's Workout app</dt>
+      <dd>Starting the same swim from both apps records two swims. Start it from SwimSet on the watch.</dd></div>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Garmin</h2>
+    <dl>
+      <div><dt>Connecting a Garmin watch</dt>
+      <dd>Install the SwimSet app on your watch from the Connect IQ Store and keep Garmin Connect installed on the iPhone. In SwimSet, open Settings → Garmin → Connect a Garmin watch; Garmin Connect opens so you can choose the watch. After that, Today shows Send to Garmin.</dd></div>
+      <div><dt>Bluetooth permission</dt>
+      <dd>SwimSet asks for Bluetooth only when you connect a Garmin, because that is how the session reaches the watch. If you declined it, allow it again in the iPhone's Settings → SwimSet.</dd></div>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Health</h2>
+    <dl>
+      <div><dt>My swims do not appear</dt>
+      <dd>SwimSet reads your swims from Apple Health. Check Health → Sharing → Apps → SwimSet and allow Workouts. Swims recorded on a Garmin reach Health only if Garmin Connect is set to share with Apple Health.</dd></div>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Subscription and purchases</h2>
+    <dl>
+      <div><dt>Restore a purchase</dt>
+      <dd>Settings → Purchase → Restore purchases, on any device signed in to the same Apple Account.</dd></div>
+      <div><dt>Cancel or change a subscription</dt>
+      <dd>Subscriptions are billed by Apple. Manage or cancel them from Settings → Purchase in SwimSet, or in the iPhone's Settings → your name → Subscriptions. Refunds are handled by Apple at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</dd></div>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Privacy</h2>
+    <p>SwimSet has no account and no servers, and collects nothing. The details are in the <a href="../">privacy policy</a>.</p>
+  </section>
+
+  <footer>
+    <p>Contact: <a href="mailto:gokturkgocen@gmail.com">gokturkgocen@gmail.com</a></p>
+    <p>SwimSet — Göktürk Göçen</p>
+  </footer>
+</div>
+</body>
+</html>
